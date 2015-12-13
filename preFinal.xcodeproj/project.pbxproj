@@ -22,6 +22,10 @@
 		1DFFE3461C1D3926005C8F65 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE3451C1D3926005C8F65 /* ExtensionDelegate.swift */; };
 		1DFFE3481C1D3926005C8F65 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE3471C1D3926005C8F65 /* NotificationController.swift */; };
 		1DFFE34A1C1D3926005C8F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFFE3491C1D3926005C8F65 /* Assets.xcassets */; };
+		1DFFE3611C1D39BF005C8F65 /* tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE3601C1D39BF005C8F65 /* tableView.swift */; settings = {ASSET_TAGS = (); }; };
+		1DFFE3661C1D3D78005C8F65 /* row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE3651C1D3D78005C8F65 /* row.swift */; settings = {ASSET_TAGS = (); }; };
+		1DFFE3681C1D482C005C8F65 /* pickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE3671C1D482C005C8F65 /* pickerView.swift */; settings = {ASSET_TAGS = (); }; };
+		1DFFE36B1C1D5606005C8F65 /* basicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE36A1C1D5606005C8F65 /* basicClass.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,10 @@
 		1DFFE3471C1D3926005C8F65 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		1DFFE3491C1D3926005C8F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DFFE34B1C1D3926005C8F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DFFE3601C1D39BF005C8F65 /* tableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableView.swift; sourceTree = "<group>"; };
+		1DFFE3651C1D3D78005C8F65 /* row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = row.swift; sourceTree = "<group>"; };
+		1DFFE3671C1D482C005C8F65 /* pickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pickerView.swift; sourceTree = "<group>"; };
+		1DFFE36A1C1D5606005C8F65 /* basicClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = basicClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +215,9 @@
 		1DFFE3401C1D3926005C8F65 /* preFinal WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1DFFE3691C1D55EF005C8F65 /* misc */,
+				1DFFE3641C1D3D2C005C8F65 /* customClasses */,
+				1DFFE35F1C1D39B1005C8F65 /* ViewControllers */,
 				1DFFE3431C1D3926005C8F65 /* InterfaceController.swift */,
 				1DFFE3451C1D3926005C8F65 /* ExtensionDelegate.swift */,
 				1DFFE3471C1D3926005C8F65 /* NotificationController.swift */,
@@ -223,6 +234,31 @@
 				1DFFE3421C1D3926005C8F65 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DFFE35F1C1D39B1005C8F65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DFFE3601C1D39BF005C8F65 /* tableView.swift */,
+				1DFFE3671C1D482C005C8F65 /* pickerView.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1DFFE3641C1D3D2C005C8F65 /* customClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1DFFE3651C1D3D78005C8F65 /* row.swift */,
+			);
+			name = customClasses;
+			sourceTree = "<group>";
+		};
+		1DFFE3691C1D55EF005C8F65 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				1DFFE36A1C1D5606005C8F65 /* basicClass.swift */,
+			);
+			name = misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,7 +477,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFFE36B1C1D5606005C8F65 /* basicClass.swift in Sources */,
+				1DFFE3681C1D482C005C8F65 /* pickerView.swift in Sources */,
 				1DFFE3481C1D3926005C8F65 /* NotificationController.swift in Sources */,
+				1DFFE3661C1D3D78005C8F65 /* row.swift in Sources */,
+				1DFFE3611C1D39BF005C8F65 /* tableView.swift in Sources */,
 				1DFFE3461C1D3926005C8F65 /* ExtensionDelegate.swift in Sources */,
 				1DFFE3441C1D3926005C8F65 /* InterfaceController.swift in Sources */,
 			);
