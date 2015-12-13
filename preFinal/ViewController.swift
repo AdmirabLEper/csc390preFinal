@@ -7,17 +7,33 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WCSessionDelegate
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Enables interdevice communication:
+        if WCSession.isSupported()
+        {
+            let session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+        }
+    }
+    
+    //Activates when the phone receives a message from the watch:
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject])
+    {
+        print(message)
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

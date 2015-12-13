@@ -26,6 +26,7 @@
 		1DFFE3661C1D3D78005C8F65 /* row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE3651C1D3D78005C8F65 /* row.swift */; settings = {ASSET_TAGS = (); }; };
 		1DFFE3681C1D482C005C8F65 /* pickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE3671C1D482C005C8F65 /* pickerView.swift */; settings = {ASSET_TAGS = (); }; };
 		1DFFE36B1C1D5606005C8F65 /* basicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE36A1C1D5606005C8F65 /* basicClass.swift */; settings = {ASSET_TAGS = (); }; };
+		1DFFE36F1C1D6C17005C8F65 /* WCsession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE36E1C1D6C17005C8F65 /* WCsession.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		1DFFE3651C1D3D78005C8F65 /* row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = row.swift; sourceTree = "<group>"; };
 		1DFFE3671C1D482C005C8F65 /* pickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pickerView.swift; sourceTree = "<group>"; };
 		1DFFE36A1C1D5606005C8F65 /* basicClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = basicClass.swift; sourceTree = "<group>"; };
+		1DFFE36E1C1D6C17005C8F65 /* WCsession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCsession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 			children = (
 				1DFFE3601C1D39BF005C8F65 /* tableView.swift */,
 				1DFFE3671C1D482C005C8F65 /* pickerView.swift */,
+				1DFFE36E1C1D6C17005C8F65 /* WCsession.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFFE36F1C1D6C17005C8F65 /* WCsession.swift in Sources */,
 				1DFFE36B1C1D5606005C8F65 /* basicClass.swift in Sources */,
 				1DFFE3681C1D482C005C8F65 /* pickerView.swift in Sources */,
 				1DFFE3481C1D3926005C8F65 /* NotificationController.swift in Sources */,

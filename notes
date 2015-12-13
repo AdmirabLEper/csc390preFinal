@@ -1,1 +1,15 @@
+Use willActivate for screens that will need to generate an updated version of its table (or picker) every time it loads,
+	Use awakeWithContext if the table only needs to be generated once.
+In order to create a "bridge" between the phone and the watch:
+	On both Watch and Phone:
+		import WatchConnectivity (with the other imports)
+		On the class definition line, add "WCSessionDelegate":
+			class mainScreen: WKInterfaceController, WCSessionDelegate
+		Add the below into awakeWithContext (Watch) or ViewController/viewDidLoad (Phone):
+			if WCSession.isSupported()
+			{
+				let session = WCSession.defaultSession()
+				session.delegate = self
+				session.activateSession()
+			}
 

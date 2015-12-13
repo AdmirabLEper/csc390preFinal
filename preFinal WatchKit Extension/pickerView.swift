@@ -30,7 +30,7 @@ class pickerView: WKInterfaceController
             //pickerItems[i].contentImage = WKImage(imageName:"blah\(i).gif")
         }
         
-        self.picker.setItems(<#T##items: [WKPickerItem]?##[WKPickerItem]?#>)
+        self.picker.setItems(pickerItems)
     }
     
     //Sets a var to the value returned by "picker" (constantly)
