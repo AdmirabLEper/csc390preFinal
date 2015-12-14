@@ -66,7 +66,7 @@ class register: UIViewController
         {
             let user = PFUser()
             user.username = self.usernameField.text
-            user.email = self.passwordField.text
+            user.email = self.emailField.text
             user.password = self.passwordField.text
         
             self.spinner.startAnimating()
@@ -82,7 +82,7 @@ class register: UIViewController
                 else
                 {
                     //Give Error Message
-                    print(error?.userInfo["Error"])
+                    phoneCore.showAlert("ERROR", message: "It don't work right, hoss.", presentingViewController: self, onScreenDelay: 2)
                 }
             })
             

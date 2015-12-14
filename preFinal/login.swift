@@ -47,7 +47,23 @@ class login: UIViewController
         }
         else
         {
-            
+            PFUser.logInWithUsernameInBackground(self.usernameField.text!, password: self.passwordField.text!)
+                {(user: PFUser?, error: NSError?) -> Void in
+                    if user != nil
+                    {
+                        //The user has successfully logged in
+                        phoneCore.currentUser = user
+                        
+                        let successfulLogin = self.storyboard?.instantiateViewControllerWithIdentifier("userDashboard") as! userDashboard
+                        self.presentViewController(successfulLogin, animated: true, completion: nil)
+                    }
+                    else
+                    {
+                        //The login failed
+                        phoneCore.showAlert("Login Error", message: "The Username/Password combination you entered doesn't match our records.", presentingViewController: self, onScreenDelay: 2)
+                        
+                    }
+                }
         }
 
     }

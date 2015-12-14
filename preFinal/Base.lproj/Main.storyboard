@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="345.5" y="54.5"/>
         </scene>
-        <!--View Controller-->
+        <!--User Dashboard-->
         <scene sceneID="2a8-MZ-ry2">
             <objects>
-                <viewController id="yOF-C9-6ys" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userDashboard" id="yOF-C9-6ys" customClass="userDashboard" customModule="preFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6zK-UH-S53"/>
                         <viewControllerLayoutGuide type="bottom" id="sOK-gz-e7L"/>
@@ -72,13 +72,22 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6KG-qg-7GN">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="RG2-Te-edt"/>
+                                    <navigationItem title="Dashboard" id="RG2-Te-edt"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K4-R2-8kd">
+                                <rect key="frame" x="79" y="95" width="216" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.10588236149999999" green="0.32156863810000003" blue="0.72941178080000002" alpha="0.90000000000000002" colorSpace="deviceRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="currentUser" destination="7K4-R2-8kd" id="Hog-hc-0JB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4l-vh-hUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

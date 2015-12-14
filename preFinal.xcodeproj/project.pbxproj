@@ -12,6 +12,8 @@
 		1D39EC191C1E948D003CFE4D /* phoneCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D39EC181C1E948D003CFE4D /* phoneCore.swift */; settings = {ASSET_TAGS = (); }; };
 		1DE317911C1ED119008DF22A /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE317901C1ED119008DF22A /* login.swift */; settings = {ASSET_TAGS = (); }; };
 		1DE317931C1ED43B008DF22A /* register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE317921C1ED43B008DF22A /* register.swift */; settings = {ASSET_TAGS = (); }; };
+		1DE317971C1EF032008DF22A /* dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE317961C1EF032008DF22A /* dashboard.swift */; settings = {ASSET_TAGS = (); }; };
+		1DE317991C1F32F4008DF22A /* userDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE317981C1F32F4008DF22A /* userDashboard.swift */; settings = {ASSET_TAGS = (); }; };
 		1DFFE3091C1D3926005C8F65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFE3081C1D3926005C8F65 /* AppDelegate.swift */; };
 		1DFFE30E1C1D3926005C8F65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DFFE30C1C1D3926005C8F65 /* Main.storyboard */; };
 		1DFFE3101C1D3926005C8F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFFE30F1C1D3926005C8F65 /* Assets.xcassets */; };
@@ -97,6 +99,8 @@
 		1D39EC181C1E948D003CFE4D /* phoneCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = phoneCore.swift; sourceTree = "<group>"; };
 		1DE317901C1ED119008DF22A /* login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		1DE317921C1ED43B008DF22A /* register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = register.swift; sourceTree = "<group>"; };
+		1DE317961C1EF032008DF22A /* dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dashboard.swift; sourceTree = "<group>"; };
+		1DE317981C1F32F4008DF22A /* userDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userDashboard.swift; sourceTree = "<group>"; };
 		1DFFE3051C1D3926005C8F65 /* preFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = preFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFFE3081C1D3926005C8F65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DFFE30D1C1D3926005C8F65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				1D39EC131C1E1C3D003CFE4D /* phoneTableView.swift */,
 				1D39EC161C1E9376003CFE4D /* DataEntry.swift */,
 				1DE317921C1ED43B008DF22A /* register.swift */,
+				1DE317961C1EF032008DF22A /* dashboard.swift */,
+				1DE317981C1F32F4008DF22A /* userDashboard.swift */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -552,8 +558,10 @@
 			files = (
 				1D39EC171C1E9376003CFE4D /* DataEntry.swift in Sources */,
 				1DE317911C1ED119008DF22A /* login.swift in Sources */,
+				1DE317971C1EF032008DF22A /* dashboard.swift in Sources */,
 				1DE317931C1ED43B008DF22A /* register.swift in Sources */,
 				1D39EC191C1E948D003CFE4D /* phoneCore.swift in Sources */,
+				1DE317991C1F32F4008DF22A /* userDashboard.swift in Sources */,
 				1D39EC141C1E1C3D003CFE4D /* phoneTableView.swift in Sources */,
 				1DFFE3091C1D3926005C8F65 /* AppDelegate.swift in Sources */,
 			);

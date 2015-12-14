@@ -14,7 +14,7 @@ class phoneTableView: UIViewController, WCSessionDelegate //was generated as a U
     
     @IBOutlet weak var actualTable: UITableView!
     
-    
+    var session : WCSession!
     
     override func viewDidLoad()
     {
@@ -24,9 +24,9 @@ class phoneTableView: UIViewController, WCSessionDelegate //was generated as a U
         
         if WCSession.isSupported()
         {
-            let theSession = WCSession.defaultSession()
-            theSession.delegate = self
-            theSession.activateSession()
+            session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
 
         }
         
