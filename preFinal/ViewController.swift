@@ -12,6 +12,8 @@ import WatchConnectivity
 class ViewController: UIViewController, WCSessionDelegate
 {
 
+    @IBOutlet weak var phoneTable: UITableView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

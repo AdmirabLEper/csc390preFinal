@@ -13,22 +13,26 @@ import WatchConnectivity
 
 class WCsession: WKInterfaceController, WCSessionDelegate
 {
-    //Enables interdevice communication
-    var session : WCSession
-    
     @IBOutlet var button: WKInterfaceButton!
     
     override func awakeWithContext(context: AnyObject?)
     {
         super.awakeWithContext(context)
+        
+        if WCSession.isSupported()
+        {
+            let theSession = WCSession.defaultSession()
+            theSession.delegate = self
+            theSession.activateSession()
+        }
     }
     
     
     @IBAction func buttonPress()
     {
+        //let cellData = ["newCell" : 17]
         
-        let applicationData = ["counterValue":"5"]
-        session.sendMessage(applicationData, replyHandler: {(theReply:[String : AnyObject]) -> Void in}, errorHandler: {(error) -> Void in})
+        //session.sendMessage(cellData, replyHandler: nil, errorHandler: nil)
     }
     
     override func willActivate()
